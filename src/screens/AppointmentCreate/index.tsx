@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import { RectButton } from 'react-native-gesture-handler'
 import { Feather } from '@expo/vector-icons'
+import { RectButton } from 'react-native-gesture-handler'
 
-import { Text, View } from 'react-native'
+import { Text, View, ScrollView, KeyboardAvoidingView } from 'react-native'
 import { theme } from '../../global/styles/theme'
 import { styles } from './styles'
 
@@ -84,14 +84,28 @@ export function AppointmentCreate() {
                                 </Text>
                             <SmallInput maxLength={2}/> 
                         </View>
-                    </View> 
 
-                    </View> 
-                        <TextArea 
-                        />
-                    <View>
+                    </View>
+                        </View> 
+                            <View style={[styles.field, { marginBottom: 12}]}>
+                                <Text style={styles.label}>
+                                    Descrição
+                                </Text>
 
-                </View>           
+                                <Text style={styles.caracteresLimit}>
+                                    Max 100 caracteres
+                                </Text>
+
+                            </View>
+                            
+                            <TextArea 
+                                multiline
+                                maxLength={100}
+                                numberOfLines={5}
+                                autoCorrect={false}
+                            />
+                        <View>
+                </View> 
             </View>
         </Background>
     )
