@@ -1,6 +1,3 @@
-/*e necessário instalar a biblioteca para leitura de Svg (expo install react-native-svg) https://docs.expo.io/versions/latest/sdk/svg/ 
- https://github.com/kristerkari/react-native-svg-transformer - ( npm add --dev react-native-svg-transformer)
-*/
 import RankedSvg from '../assets/ranked.svg';
 import DuelSvg from '../assets/duel.svg';
 import FunSvg from '../assets/fun.svg';

@@ -6,7 +6,7 @@ import { Feather } from '@expo/vector-icons';
 import { Text, View } from 'react-native';
 
 import { theme } from '../../global/styles/theme';
-import { styles } from './styles';
+import { styles } from './style';
 
 type Props = {
   title: string;
